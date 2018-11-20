@@ -1,0 +1,18 @@
+<!-- <h1>list</h1> -->
+
+<div class="row" >
+
+	<div class="col-md-3" ng-repeat='item in items | filter:query'>
+<!-- <h1>item</h1> -->
+		 <div class="card ">
+			<img ng-src="{{item.Poster}}" alt="Avatar" style="width:100%">
+			<div class="container">
+			<h4>{{item.Title}}</h4>
+			<button  ng-click="addToCart(item)" class="btn btn-primary">Add to Cart</button>
+			</div>
+		</div> 
+
+	</div>
+
+</div>
+
