@@ -1,6 +1,7 @@
 <div class="row" id="cartlist">
 
 	<div class="col-md-3" ng-repeat='item in cart | filter:query'>
+		
 		 <div  ng-if="item.showElement = true"  class="card" id="{{$index}}" >
 			<img ng-src="{{item.Poster}}" alt="Avatar" style="width:100%">
 			<div class="container">

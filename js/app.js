@@ -1,5 +1,6 @@
 var app = angular.module('App', ['ngRoute']);
 
+// defining routes for home and cart
 app.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider.when('/', {
@@ -15,7 +16,5 @@ app.config(['$routeProvider', function($routeProvider){
 	}).otherwise({
 		redirectTo: '/'
 	})
-
-
 
 }]);
