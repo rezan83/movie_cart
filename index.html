@@ -15,10 +15,9 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- angular and angular route -->
-
     <script src="https://code.angularjs.org/1.2.32/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.32/angular-route.min.js"></script>
-    
+
     <title>Movie Cart</title>
 
   </head>
@@ -28,8 +27,9 @@
     <div class="header navbar navbar-default navbar-fixed-top">
       <h1 class="logo">Batman Movie Cart</h1>
       
-      <a href="#/"> Home </a>
-      <a href="#cart"><i class="fas fa-shopping-cart"></i>  {{cart.length}} in Cart</a>
+
+      <a href="#/"><button class="btn btn-primary">Home</button>  </a>
+      <a href="#cart">{{total}} in <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i></button> </a>
 
       <!-- Search form -->
       <form class="form-inline">

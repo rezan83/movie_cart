@@ -6,7 +6,7 @@
 			<img ng-src="{{item.Poster}}" alt="Avatar" style="width:100%">
 			<div class="container">
 			<h4>{{item.Title}}</h4>
-			<button  ng-click="addToCart(item)" class="btn btn-primary">Add to Cart</button>
+			<button  ng-click="addToCart(item, $index)" ng-disabled="item.noAdd" class="btn btn-primary">Add to Cart</button>
 			</div>
 		</div> 
 
